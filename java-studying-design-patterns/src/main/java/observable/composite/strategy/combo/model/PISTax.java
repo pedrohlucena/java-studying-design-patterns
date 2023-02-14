@@ -2,15 +2,23 @@ package observable.composite.strategy.combo.model;
 
 import java.util.Observable;
 
+import observable.composite.strategy.combo.config.singleton.ConfigSingleton;
+
 public class PISTax extends Observable implements Tax {
-	private float ALIQUOT = 0.6f;
+	private float aliquot;
 	
 	private float pisValue;
+	
+	public PISTax() {
+		aliquot = Float.parseFloat(
+			ConfigSingleton.getInstance().getProperty("aliquot")
+		);
+	}
 
 	@Override
 	public void calculateTax(float value) {
 		setChanged();
-		pisValue = value * ALIQUOT;
+		pisValue = value * aliquot;
 		notifyObservers(pisValue);
 	}
 
@@ -19,12 +27,12 @@ public class PISTax extends Observable implements Tax {
 	}
 	
 	public float getAliquot() {
-		return ALIQUOT;
+		return aliquot;
 	}
 	
 	@Override
 	public String toString() {
-		return "Pis [ALIQUOTA=" + ALIQUOT 
-               + ", valorDoPis=" + ALIQUOT + "]";
+		return "Pis [ALIQUOTA=" + aliquot 
+               + ", valorDoPis=" + aliquot + "]";
 	}
 }
