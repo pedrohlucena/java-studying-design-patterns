@@ -1,10 +1,10 @@
-package observable.composite.strategy.combo.controller;
+package observable.composite.strategy.singleton.combo.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import observable.composite.strategy.combo.model.Tax;
-import observable.composite.strategy.combo.view.TaxScreen;
+import observable.composite.strategy.singleton.combo.model.Tax;
+import observable.composite.strategy.singleton.combo.view.TaxScreen;
 
 public class TaxController implements ActionListener {
 	private Tax model;

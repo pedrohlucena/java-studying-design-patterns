@@ -1,4 +1,4 @@
-package observable.composite.strategy.combo.config.singleton;
+package observable.composite.strategy.singleton.combo.config.singleton;
 
 import java.io.IOException;
 import java.util.Properties;

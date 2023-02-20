@@ -1,8 +1,8 @@
-package observable.composite.strategy.combo.model;
+package observable.composite.strategy.singleton.combo.model;
 
 import java.util.Observable;
 
-import observable.composite.strategy.combo.config.singleton.ConfigSingleton;
+import observable.composite.strategy.singleton.combo.config.singleton.ConfigSingleton;
 
 public class PISTax extends Observable implements Tax {
 	private float aliquot;

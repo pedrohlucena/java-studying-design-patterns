@@ -1,4 +1,4 @@
-package observable.composite.strategy.combo.view;
+package observable.composite.strategy.singleton.combo.view;
 
 import java.awt.Button;
 import java.awt.Frame;

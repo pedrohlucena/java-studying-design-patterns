@@ -1,8 +1,8 @@
-package observable.composite.strategy.combo.main;
+package observable.composite.strategy.singleton.combo.main;
 
-import observable.composite.strategy.combo.controller.TaxController;
-import observable.composite.strategy.combo.model.PISTax;
-import observable.composite.strategy.combo.view.PisScreen;
+import observable.composite.strategy.singleton.combo.controller.TaxController;
+import observable.composite.strategy.singleton.combo.model.PISTax;
+import observable.composite.strategy.singleton.combo.view.PisScreen;
 
 public class CalculusTest {
 	public static void main(String[] args) {
